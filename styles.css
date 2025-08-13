@@ -107,20 +107,32 @@ body {
     padding: 1.25rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: inline-block;
     margin-bottom: 1.5rem;
-    max-width: 500px;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* ClustrMaps Container */
 .clustrmaps-container {
     margin-top: 1rem;
     text-align: center;
+    width: 100%;
+    overflow: hidden;
 }
 
 .clustrmaps-container iframe {
     border-radius: 6px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure ClustrMaps script content is properly sized */
+.clustrmaps-container script {
+    display: block;
+    width: 100%;
 }
 
 /* Portrait Image */
@@ -388,6 +400,11 @@ body {
     .analytics-widget {
         max-width: 100%;
         padding: 1rem;
+        margin: 0 10px 1.5rem 10px;
+    }
+    
+    .clustrmaps-container {
+        margin-top: 0.5rem;
     }
 
     .map-image {
